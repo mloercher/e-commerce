@@ -1,5 +1,6 @@
 const express = require('express')
 const cors = require('cors')
+const products = require('./products')
 
 const app= express()
 
@@ -13,6 +14,10 @@ app.use(cors())
 // req is what is inputted from front end, res is what is recieved from api
 app.get('/', (req, res) => {
     res.send('Welcome to online shop...')
+})
+
+app.get('/products', (req,res) => {
+    res.send(products)
 })
 
 
