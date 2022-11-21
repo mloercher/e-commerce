@@ -7,7 +7,7 @@ const initialState = {
     status: null,
 }
 
-//Action Creator, makes used of createAsyncThunk--can accept 3 params: action-type, payload creator (funtion), options
+//Action Creator, makes used of createAsyncThunk--can accept 3 params: action-type, payload creator (function), options
 export const productsFetch = createAsyncThunk(
     //1st
     "products/productsFetch",
