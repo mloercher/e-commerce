@@ -12,7 +12,7 @@ function Home() {
                         <div className='products'>
                             {data?.map(product => <div key={product.id} className='product'>
                             <h3 className='product-name'>{product.name}</h3>
-                            <img src={product.img} alt={product.name} />
+                            <img src={product.image} alt={product.name} />
                             <div className='details'>
                                 <span >{product.desc}</span>
                                 <span className='price'>${product.price}</span>
